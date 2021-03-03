@@ -1,0 +1,148 @@
+.category-container {
+  position: relative;
+  padding-top: 160px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: calc(75vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.category-card {
+  width: 275px;
+  height: 300px;
+  padding: 20px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 5px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);
+}
+.category-icon {
+  font-size: 40px;
+  display: block;
+  margin: 0 auto;
+  color: #c40007;
+}
+.category-title {
+  margin: 20px;
+  font-size: 30px;
+}
+.category-desc {
+  font-size: 16px;
+  font-family: "JosefinSansRegular";
+  line-height: 25px;
+  text-align: center;
+}
+
+.slogan-section {
+  width: 90%;
+  max-width: 1300px;
+  min-height: 100vh;
+  padding-top: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.slogan-image {
+  position: relative;
+  background-image: 
+  /* linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ), */ url(../images/slogan-bg.jpg);
+
+  width: 60%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slogan-card {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(0%, -50%);
+  background-color: #fff;
+  width: 90%;
+  height: 400px;
+  padding: 20px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border-left: 5px solid #c40007;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.slogan-card h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.slogan-card p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.slogan-card span {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@media (max-width: 768px) {
+  .slogan-section {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .slogan-image {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .slogan-card {
+    border-left: none;
+
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    transform: translate(-72.5%, -50%);
+  }
+  .slogan-card h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .slogan-card p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .slogan-card span {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
