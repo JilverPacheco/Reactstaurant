@@ -7,7 +7,7 @@
 </h2>
 
 This app is only a template of a fast food website, 
-The link to the page is <b>[here](https://reactstaurant.netlify.app/)</b>.
+The link to the page is <b>[here](https://reactstaurant.netlify.app/)</b>, the information is written in Spanish language.
 
 <h2 align="left">
   <b>For initializing this project on your pc.<b/>
@@ -27,5 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ```
 npm run build
 ```
+4. Now you can deploy your app on any free hosting server, hope you enjoy it😄.
 
 
