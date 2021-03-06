@@ -27,4 +27,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ```
 npm run build
 ```
+<<<<<<< HEAD
 4. Now you can deploy your app on any free hosting server, hope you enjoy it😄.
+=======
+4. Now you can deploy your app on any free hosting server, hope you enjoy it😄.
+
+
+>>>>>>> 0440d8600eda25bf61e52466f1c1ad2a3af2f5fc
