@@ -4,8 +4,8 @@ import { CategoriesData } from "../../data/CategoriesData";
 const Categories = () => {
   return (
     <section className="category-container" id="categorias">
-      <div className="section-title" data-aos="fade-up">
-        <div className="section-title-wrapper">
+      <div className="section-title">
+        <div className="section-title-wrapper" data-aos="fade-up">
           <h3>Nuestras categorias</h3>
         </div>
       </div>
@@ -18,8 +18,6 @@ const Categories = () => {
           </div>
         ))}
       </div>
-
-      
     </section>
   );
 };

@@ -18,15 +18,16 @@
   flex-wrap: wrap;
 }
 .category-card {
+  background: #353535;
+  color: #f0f2f5;
   width: 275px;
   height: 300px;
-  padding: 20px 10px;
   margin: 10px;
+  padding: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   border-radius: 5px;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);
 }
@@ -34,14 +35,15 @@
   font-size: 40px;
   display: block;
   margin: 0 auto;
-  color: #c40007;
+  color: #bc1329;
 }
 .category-title {
   margin: 20px;
+  font-family: "JosefinSansRegular";
   font-size: 30px;
 }
 .category-desc {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "JosefinSansRegular";
   line-height: 25px;
   text-align: center;
@@ -60,24 +62,19 @@
 }
 .slogan-image {
   position: relative;
-  background-image: 
-  /* linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ), */ url(../images/slogan-bg.jpg);
-
+  background-image: url(../images/slogan-bg.jpg);
   width: 60%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   display: flex;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: 0.4s;
 }
+
 .slogan-card {
   position: absolute;
   top: 50%;
@@ -89,7 +86,7 @@
   padding: 20px;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  border-left: 5px solid #c40007;
+  border-left: 5px solid #bc1329;
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -32,7 +32,7 @@
   color: #f2f2f2;
 }
 .btn-order {
-  background-color: #c40007;
+  background-color: #BC1329;
   color: #f2f2f2;
 }
 
@@ -46,12 +46,12 @@
 }
 
 .btn-order-outline {
-  border: 2px solid #c40007;
-  color: #c40007;
+  border: 2px solid #BC1329;
+  color: #BC1329;
 }
 
 .btn-order-outline:hover {
-  background-color: #c40007;
+  background-color: #BC1329;
   color: #f2f2f2;
 }
 .back-btn {

@@ -29,7 +29,16 @@ const Products = () => {
 
   return (
     <div className="container" id="menu">
-      <div className="product-container" data-aos="fade-up">
+      <div className="section-title">
+        <div className="section-title-wrapper" data-aos="fade-up">
+          <h3>Elige tu favorita</h3>
+        </div>
+      </div>
+      <div
+        className="product-container"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         {ProductData.map((product) => (
           <div key={product.id} className="product-card">
             <span className="product-price">

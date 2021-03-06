@@ -1,9 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
-import { BiFoodMenu } from "react-icons/bi";
-import { MdContacts } from "react-icons/md";
-import { FaHome, FaUsers } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Drawer = ({ isOpen, setIsOpen }) => {
@@ -30,8 +27,7 @@ const Drawer = ({ isOpen, setIsOpen }) => {
               offset={0}
               duration={500}
             >
-              <FaHome />
-              &nbsp; Inicio
+              Inicio
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
@@ -42,8 +38,7 @@ const Drawer = ({ isOpen, setIsOpen }) => {
               offset={0}
               duration={500}
             >
-              <BiFoodMenu />
-              &nbsp; Nuestras categorias
+              Categorias
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
@@ -54,35 +49,20 @@ const Drawer = ({ isOpen, setIsOpen }) => {
               offset={0}
               duration={500}
             >
-              <BiFoodMenu />
-              &nbsp; Nuestro menu
-            </Link>
-
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="menu-item"
-              to="contacto"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <FaUsers />
-              &nbsp; Testimonios
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="menu-item"
-              to="contacto"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <MdContacts />
-              &nbsp; Contacto
+              Menu
             </Link>
           </div>
+          <Link
+            onClick={() => setIsOpen(false)}
+            className="contact-button"
+            to="contacto"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Contacto
+          </Link>
         </motion.div>
       )}
     </AnimatePresence>

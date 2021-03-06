@@ -14,12 +14,17 @@
   font-family: "JosefinSansBold";
   src: url(../fonts/Josefin_Sans/static/JosefinSans-Bold.ttf);
   font-weight: bold;
-  font-style:normal;
+  font-style: normal;
 }
 
 html,
-* {
+*,
+*::after,
+*::before {
   margin: 0px;
   padding: 0px;
   font-family: "JosefinSansLight";
+}
+body {
+  background-color: #1e2124;
 }

@@ -4,8 +4,11 @@
   justify-content: center;
   flex-wrap: wrap;
   min-height: 100vh;
+  padding-top: 80px;
 }
 .product-card {
+  background: #353535;
+  color: #f0f2f5;
   position: relative;
   width: 300px;
   min-height: 400px;
