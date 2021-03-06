@@ -22,6 +22,13 @@
   background-color: transparent;
   margin: 5px;
 }
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .btn-hover:hover {
   transition: 0.4ss;
   padding: 10px 20px;
@@ -32,7 +39,7 @@
   color: #f2f2f2;
 }
 .btn-order {
-  background-color: #BC1329;
+  background-color: #bc1329;
   color: #f2f2f2;
 }
 
@@ -46,12 +53,12 @@
 }
 
 .btn-order-outline {
-  border: 2px solid #BC1329;
-  color: #BC1329;
+  border: 2px solid #bc1329;
+  color: #f0f2f5;
 }
 
 .btn-order-outline:hover {
-  background-color: #BC1329;
+  background-color: #bc1329;
   color: #f2f2f2;
 }
 .back-btn {

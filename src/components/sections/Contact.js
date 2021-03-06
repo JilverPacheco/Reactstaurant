@@ -43,9 +43,7 @@ const Contact = () => {
         timer: 3000,
         timerProgressBar: true,
       });
-      // return setError(true);
     } else {
-      // setError(false);
       Swal.fire({
         icon: "success",
         title: "Enviado satisfactoriamente!",
@@ -58,7 +56,7 @@ const Contact = () => {
 
   return (
     <section className="contact-container" id="contacto">
-      <div className="contact-wrapper" data-aos="fade-up">
+      <div className="contact-wrapper">
         <form className="form-container" data-aos="zoom-in">
           <h2>Agendemos tu reserva</h2>
 

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Navbar.css";
+import "../styles/Header.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoRestaurantOutline } from "react-icons/io5";
 import Drawer from "./Drawer";
-import { Link } from "react-scroll";
+import { Link as NavHashLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,26 +20,42 @@ const Header = () => {
   useEffect(() => {
     backgroundNavbar();
   }, [bgColor]);
+  
   window.addEventListener("scroll", backgroundNavbar);
 
   return (
-    <div
+    <header
       className={bgColor ? "navbar nav-bgColor" : "navbar"}
       data-aos="fade-down"
     >
       <nav className="navbar-wrapper">
-        <Link to="inicio" spy={true} smooth={true} offset={0} duration={500}>
+        <NavHashLink
+          to="inicio"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
           <div className="nav-logo">
             Reactstaurant&nbsp;
             <IoRestaurantOutline style={{ fontSize: "25px" }} />
           </div>
-        </Link>
-        <div className="navigation" onClick={() => setIsOpen(!isOpen)}>
-          <AiOutlineMenu />
+        </NavHashLink>
+
+        <div className="nav-menu">
+          <Link to="/ingreso" className="nav-link">
+            Ingresar
+          </Link>
+          <Link to="/registro" className="nav-link">
+            Registrarse
+          </Link>
+          <div className="navigation" onClick={() => setIsOpen(!isOpen)}>
+            <AiOutlineMenu />
+          </div>
         </div>
       </nav>
       <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
-    </div>
+    </header>
   );
 };
 

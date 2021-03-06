@@ -3,6 +3,7 @@ import Hamburgesa_picante from "../images/products/hamburgesa-picante.jpg";
 import Hot_dog_tradicional from "../images/products/hot-dog-tradicional.jpg";
 import Pizza_rojita from "../images/products/pizza-rojita.jpg";
 import Pizza_vegetal from "../images/products/pizza-vegetal.jpg";
+import Papas_fritas from "../images/products/papas-fritas-1.jpg";
 
 export const ProductData = [
   {
@@ -70,5 +71,15 @@ export const ProductData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus ligula vitae nulla scelerisque lobortis et ut velit. Etiam tincidunt tincidunt lorem, vel semper mauris condimentum vel.",
     ingredients: ["Lechuga fresca", "Champiñones", "Tomate"],
+  },
+  {
+    id: 6,
+    category: "papas-fritas",
+    name: "Papas fritas",
+    price: 2.99,
+    image: Papas_fritas,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus ligula vitae nulla scelerisque lobortis et ut velit. Etiam tincidunt tincidunt lorem, vel semper mauris condimentum vel.",
+    ingredients: ["Papas fritas", "Perejil", "Salsas de la casa"],
   },
 ];

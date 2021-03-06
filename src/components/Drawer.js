@@ -1,7 +1,8 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-scroll";
+import { AiOutlineClose, AiOutlineShoppingCart } from "react-icons/ai";
+import { Link as NavHashLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Drawer = ({ isOpen, setIsOpen }) => {
   return (
@@ -17,52 +18,59 @@ const Drawer = ({ isOpen, setIsOpen }) => {
           <div className="drawer-navigation" onClick={() => setIsOpen(!isOpen)}>
             <AiOutlineClose />
           </div>
+          <Link
+            to="/carrito"
+            className="drawer-navigation-cart"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <AiOutlineShoppingCart />
+          </Link>
           <div className="menu">
-            <Link
+            <NavHashLink
               onClick={() => setIsOpen(false)}
               className="menu-item"
               to="inicio"
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
             >
               Inicio
-            </Link>
-            <Link
+            </NavHashLink>
+            <NavHashLink
               onClick={() => setIsOpen(false)}
               className="menu-item"
               to="categorias"
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
             >
               Categorias
-            </Link>
-            <Link
+            </NavHashLink>
+            <NavHashLink
               onClick={() => setIsOpen(false)}
               className="menu-item"
               to="menu"
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1000}
             >
               Menu
-            </Link>
+            </NavHashLink>
           </div>
-          <Link
+          <NavHashLink
             onClick={() => setIsOpen(false)}
             className="contact-button"
             to="contacto"
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={1000}
           >
-            Contacto
-          </Link>
+            Agenda tu reserva
+          </NavHashLink>
         </motion.div>
       )}
     </AnimatePresence>

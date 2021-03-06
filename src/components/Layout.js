@@ -16,12 +16,12 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Header />
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <motion.div
           className="global-container"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 1 }}
         >
           {children}
