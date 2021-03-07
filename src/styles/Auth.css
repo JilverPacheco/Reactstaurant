@@ -74,7 +74,7 @@
   margin-left: 5px;
 }
 .auth-right-wrapper form h2 {
-    font-family: "JosefinSansBold";
+  font-family: "JosefinSansBold";
 
   font-size: 30px;
   text-align: center;
@@ -94,4 +94,58 @@
 }
 .back-link:hover {
   transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .auth-left-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+  }
+  .auth-right-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .auth-right-wrapper form {
+    background: rgba(255, 255, 255, 0.8);
+    display: block;
+    width: 300px;
+    padding: 20px 10px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+  .back-link:hover {
+    transform: scale(1.2);
+  }
+  .back-link {
+    z-index: 100;
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 480px) {
+  .auth-right-wrapper form {
+    background: rgba(255, 255, 255, 0.8);
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+  .back-link:hover {
+    transform: scale(1.2);
+  }
+  .back-link {
+    z-index: 100;
+    transform: scale(1.2);
+  }
 }

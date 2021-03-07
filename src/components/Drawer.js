@@ -9,26 +9,34 @@ const Drawer = ({ isOpen, setIsOpen }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="drawer"
+          className="sidebar"
           initial={{ opacity: 0, x: 300 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 300 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="drawer-navigation" onClick={() => setIsOpen(!isOpen)}>
+          <div className="sidebar-navigation" onClick={() => setIsOpen(!isOpen)}>
             <AiOutlineClose />
           </div>
           <Link
             to="/carrito"
-            className="drawer-navigation-cart"
+            className="sidebar-navigation-cart"
             onClick={() => setIsOpen(!isOpen)}
           >
             <AiOutlineShoppingCart />
           </Link>
-          <div className="menu">
+          <div className="sidebar-menu">
+            <div className="sidebar-btn-link-wrapper">
+              <Link to="/ingreso" className="sidebar-link btn-link">
+                Ingresar
+              </Link>
+              <Link to="/registro" className="sidebar-link btn-link">
+                Registrarse
+              </Link>
+            </div>
             <NavHashLink
               onClick={() => setIsOpen(false)}
-              className="menu-item"
+              className="sidebar-menu-item"
               to="inicio"
               spy={true}
               smooth={true}
@@ -39,7 +47,7 @@ const Drawer = ({ isOpen, setIsOpen }) => {
             </NavHashLink>
             <NavHashLink
               onClick={() => setIsOpen(false)}
-              className="menu-item"
+              className="sidebar-menu-item"
               to="categorias"
               spy={true}
               smooth={true}
@@ -50,7 +58,7 @@ const Drawer = ({ isOpen, setIsOpen }) => {
             </NavHashLink>
             <NavHashLink
               onClick={() => setIsOpen(false)}
-              className="menu-item"
+              className="sidebar-menu-item"
               to="menu"
               spy={true}
               smooth={true}

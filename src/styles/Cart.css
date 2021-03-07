@@ -1,0 +1,35 @@
+.cart-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+.cart-table {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.cart-title-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* place-items: center; */
+  border: 2px solid #000;
+}
+.cart-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #000;
+  padding: 20px 0px;
+  text-align: center;
+}
+.cart-desc {
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+td,
+th {
+    margin: 0px;
+  border: 1px solid #dddddd;
+}

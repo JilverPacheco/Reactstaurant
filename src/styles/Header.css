@@ -18,7 +18,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .nav-logo {
   font-size: 30px;
   color: #f2f2f2;
@@ -28,22 +27,18 @@
   justify-content: center;
   cursor: pointer;
 }
-
 .nav-menu {
   width: 225px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
-  /* border: 2px solid #000; */
 }
-
 .nav-link {
   text-decoration: none;
   color: #f0f2f5;
   font-size: 18px;
 }
-
 .navigation {
   font-size: 30px;
   color: #fff;
@@ -51,7 +46,8 @@
 .navigation:hover {
   cursor: pointer;
 }
-.drawer {
+
+.sidebar {
   position: relative;
   width: 300px;
   position: fixed;
@@ -61,35 +57,32 @@
   background-color: #eab53a;
   z-index: 10000;
 }
-.drawer-navigation {
+.sidebar-navigation {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 30px;
   color: #000;
 }
-.drawer-navigation-cart {
+.sidebar-navigation:hover {
+  cursor: pointer;
+}
+.sidebar-navigation-cart {
   position: absolute;
   top: 20px;
   left: 20px;
   font-size: 30px;
   color: #000;
 }
-.drawer-navigation:hover {
-  cursor: pointer;
+.sidebar-btn-link-wrapper {
+  display: none;
 }
 
-.nav-item {
-  font-family: "JosefinSansLight";
-  color: #f2f2f2;
-  list-style: none;
-}
-.menu {
+.sidebar-menu {
   position: relative;
   top: 80px;
-  /* display: block; */
 }
-.menu-item {
+.sidebar-menu-item {
   font-family: "JosefinSansRegular";
   padding: 20px 10px;
   font-size: 23px;
@@ -97,7 +90,7 @@
   text-align: center;
   background-color: transparent;
 }
-.menu-item:hover {
+.sidebar-menu-item:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -117,11 +110,37 @@
 }
 .contact-button:hover {
   cursor: pointer;
-  /* transform: scale(1.1) translate(-50%, 0%); */
 }
 
 @media (max-width: 480px) {
-  .drawer {
+  .sidebar-btn-link-wrapper {
+    /* border: 2px solid #000; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+  }
+  .sidebar-btn-link-wrapper .sidebar-link {
+    font-size: 23px;
+    text-decoration: none;
+    color: #f0f2f5;
+  }
+  .sidebar-btn-link-wrapper .btn-link {
+    font-family: "JosefinSansBold";
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #bc1329;
+    color: #bc1329;
+  }
+  .nav-menu {
+    width: 30px;
+  }
+  .nav-link {
+    display: none;
+  }
+
+  .sidebar {
     width: 100%;
   }
 }
